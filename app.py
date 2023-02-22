@@ -15,7 +15,7 @@ def get_response(url):
 def prepare_urls(matches):
     list = []
     for match in matches:
-        if match.startswith("https:") and "scontent.cdninstagram.com" in match:
+        if match.startswith("https:") and "scontent.cdninstagram.com" in match or "scontent-fra3-1.cdninstagram.com" in match:
             list.append(match.replace("\\", ""))
     return list
 
